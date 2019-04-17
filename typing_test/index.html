@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Check out your typing speed</title>
+    <link rel = "icon" type="image/png" href="https://typingtestnow.com/images/social-share-thumb.png">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>TYPING SPEED TEST</h1>
+    </header>
+    <main class="main">
+        
+        <section class="test-area">
+            <p class='steps'>Step 1. Choose difficulty level:</p>
+            <div class="difficulty"> 
+                <form id='difficulty-levels'>
+                    <label for="level_1">
+                        <input type='radio' id='level_1' name='levels' value='level1'> 0 grade
+                    </label>
+                    <label for="level_2">
+                            <input type='radio' id='level_2' name='levels' value='level2'> Easy
+                    </label>
+                    <label for="level_3">
+                            <input type='radio' id='level_3' name='levels' value='level3'> Medium
+                    </label>
+                    <label for="level_4">
+                            <input type='radio' id='level_4' name='levels' value='level4'> Advanced
+                    </label>
+                    <label for="level_5">
+                            <input type='radio' id='level_5' name='levels' value='level5'> Pro
+                    </label>
+                    
+                </form>
+            </div>
+
+            <p class='steps'>Step 2. Read the task first </p>
+            <div id="origin-text">
+                <p>Here you will see the text to type!</p>
+            </div>
+
+            <p class='steps'>Step 3. Start typing </p>
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="6" placeholder="The timer starts when you start typing."></textarea>
+            </div>
+
+            <div class="timer-reset-container">
+                <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section>
+
+                <button id="reset">RESET</button>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

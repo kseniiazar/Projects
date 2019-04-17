@@ -1,0 +1,121 @@
+body, textarea, button {
+	font-family: 'Dokdo', cursive;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: .05em 2em;
+    background-color: #0D1B2E;
+    color: white;
+    font-size: 1.5em;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.difficulty {
+    display: flex;
+    flex-direction: column; 
+}
+
+.steps {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2em;
+    margin:  .5em auto;
+}
+
+
+#difficulty-levels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#difficulty-levels label input {
+    display: none;
+}   
+
+#difficulty-levels label {
+    padding: 0 .5em;
+    font-size: 1.5em;
+    color: #E95D0F;
+    border: 1px solid  #E95D0F;
+    border-radius: 10px;
+}
+
+#difficulty-levels label:hover {
+    color: white;
+    background-color: #E95D0F;
+}
+
+#difficulty-levels label input:checked{
+    color: white;
+    background-color: #E95D0F;
+}
+
+.test-area {
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 0 2em;
+}
+
+.test-wrapper {
+    border: 3px solid grey;
+    border-radius: 10px;
+    
+}
+
+#origin-text {
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    background-color: #ededed;
+}
+
+#origin-text p {
+    margin: 0;
+    padding-bottom: 1em;
+    font-family: sans-serif;
+}
+
+.test-wrapper {
+    display: flex;
+}
+
+.test-wrapper textarea {
+    flex: 1;
+    font-family: sans-serif;
+}
+
+.timer-reset-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#reset {
+    padding: 0 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #E95D0F;
+    border: 1px solid #E95D0F;
+    border-radius: 10px;
+}
+
+#reset:hover {
+    color: white;
+    background-color: #E95D0F;
+}
